@@ -1,0 +1,72 @@
+[
+  {
+    "role": "SENIOR",
+    "name": "Hans Müller",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "SENIOR",
+    "name": "Thomas Schmidt",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "MIDDLE",
+    "name": "Stefan Schneider",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "JUNIOR",
+    "name": "Anna Fischer",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "SENIOR",
+    "name": "Michael Weber",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "MIDDLE",
+    "name": "Andreas Wagner",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "MIDDLE",
+    "name": "Sabine Becker",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "SENIOR",
+    "name": "Wolfgang Hoffmann",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "MIDDLE",
+    "name": "Julia Meyer",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  },
+  {
+    "role": "JUNIOR",
+    "name": "Klaus Bauer",
+    "salary": 0,
+    "bonus": 0,
+    "transactionCount": 0
+  }
+]

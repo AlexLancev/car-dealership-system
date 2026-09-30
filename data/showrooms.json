@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Autohaus Royal GmbH",
+    "address": "Bessemerstraße 42A, 12103 Berlin",
+    "quantityCar": 0,
+    "salesVolume": 0,
+    "revenue": 0
+  },
+  {
+    "name": "Autoland (Berlin branch)",
+    "address": "Alt-Friedrichsfelde 63, 12683 Berlin",
+    "quantityCar": 0,
+    "salesVolume": 0,
+    "revenue": 0
+  },
+  {
+    "name": "Volkswagen Zentrum München (MAHAG)",
+    "address": "Landsberger Str. 240, 80687 München",
+    "quantityCar": 0,
+    "salesVolume": 0,
+    "revenue": 0
+  }
+]

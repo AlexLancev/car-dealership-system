@@ -1,0 +1,170 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum RoleSalesman {
+  SENIOR
+  MIDDLE
+  JUNIOR
+}
+
+enum DealershipRole {
+  OWNER
+  CHIEF_ADMIN
+  ADMIN
+}
+
+model Staff {
+  id           Int     @id @default(autoincrement())
+  name         String
+  email        String  @unique
+  password     String
+  refreshToken String?
+
+  role DealershipRole
+
+  showroom   Showroom? @relation(fields: [showroomId], references: [id], onDelete: Cascade)
+  showroomId Int?
+}
+
+model Showroom {
+  id          Int    @id @default(autoincrement())
+  name        String
+  address     String
+  quantityCar Int    @default(0)
+  salesVolume Int    @default(0)
+  revenue     Int    @default(0)
+
+  salesmen Salesman[]
+  staff    Staff[]
+  buyers   Buyer[]
+  cars     Car[]
+}
+
+model Car {
+  id          Int     @id @default(autoincrement())
+  brand       String
+  model       String
+  price       Int
+  isAvailable Boolean @default(true)
+
+  mileage        Int     @default(0)
+  isRegistration Boolean @default(false)
+
+  features    Feature[]
+  inspections VehicleInspection[]
+  carDetail   CarDetails?
+
+  showroom   Showroom @relation(fields: [showroomId], references: [id], onDelete: Cascade)
+  showroomId Int
+
+  buyer   Buyer? @relation(fields: [buyerId], references: [id], onDelete: SetNull)
+  buyerId Int?
+
+  salesman   Salesman? @relation(fields: [salesmanId], references: [id], onDelete: SetNull)
+  salesmanId Int?
+}
+
+model CarDetails {
+  id      Int    @id @default(autoincrement())
+  vinCode String @unique
+  color   String
+  engine  String
+
+  car   Car @relation(fields: [carId], references: [id], onDelete: Cascade)
+  carId Int @unique
+
+  @@map("car_details")
+}
+
+model Feature {
+  id     Int    @id @default(autoincrement())
+  option String
+
+  cars Car[]
+}
+
+model Salesman {
+  id               Int          @id @default(autoincrement())
+  roleSalesman     RoleSalesman @default(JUNIOR)
+  name             String
+  salary           Int          @default(400)
+  transactionCount Int          @default(0)
+  bonus            Int?         @default(0)
+
+  showroom   Showroom @relation(fields: [showroomId], references: [id], onDelete: Cascade)
+  showroomId Int
+
+  buyers Buyer[]
+  car    Car[]
+}
+
+model Buyer {
+  id          Int     @id @default(autoincrement())
+  name        String
+  amountMoney Int
+  quantityCar Int     @default(0)
+  phoneNumber String?
+  email       String?
+
+  passport Passport?
+
+  salesmen  Salesman[]
+  showrooms Showroom[]
+
+  ownedCars Car[]
+}
+
+model Passport {
+  id             Int      @id @default(autoincrement())
+  documentNumber String
+  givenNames     String
+  surname        String
+  placeOfBirth   String
+  dateOfBirth    DateTime @db.Timestamptz()
+  dateOfExpiry   DateTime @db.Timestamptz()
+
+  buyer   Buyer @relation(fields: [buyerId], references: [id], onDelete: Cascade)
+  buyerId Int   @unique
+}
+
+model VehicleInspection {
+  id               Int      @id @default(autoincrement())
+  createdAt        DateTime @default(now())
+  accruedAmount    Float
+  isReturnPossible Boolean
+
+  mileage        Int
+  isRegistration Boolean
+
+  car   Car @relation(fields: [carId], references: [id], onDelete: Cascade)
+  carId Int
+
+  technicalScore TechnicalScore @relation(fields: [techId], references: [id], onDelete: Cascade)
+  techId         Int            @unique
+
+  @@map("vehicle_inspections")
+}
+
+model TechnicalScore {
+  id          Int @id @default(autoincrement())
+  body        Int
+  salon       Int
+  wheels      Int
+  engine      Int
+  electronics Int
+
+  vehicleInspection VehicleInspection?
+
+  @@map("technical_score")
+}

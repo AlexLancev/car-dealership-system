@@ -1,0 +1,92 @@
+[
+  {
+    "vinCode": "WAUZZZFYXMA015482",
+    "color": "Mythosschwarz Metallic",
+    "engine": "2.0 L Mild Hybrid Diesel (150 kW / 204 PS)",
+    "carId": "1"
+  },
+  {
+    "vinCode": "W1K2062041F093842",
+    "color": "Polarsilber Metallic",
+    "engine": "2.0 L Diesel (147 kW / 200 PS)",
+    "carId": "2"
+  },
+  {
+    "vinCode": "WBA11AH040C852194",
+    "color": "Sophistograu Brillanteffekt",
+    "engine": "3.0 L Inline-6 Diesel (195 kW / 265 PS)",
+    "carId": "3"
+  },
+  {
+    "vinCode": "WP1AA2956JLA39481",
+    "color": "Vulkanitgrau Metallic",
+    "engine": "3.0 L V6 Twin-Turbo Petrol (265 kW / 360 PS)",
+    "carId": "4"
+  },
+  {
+    "vinCode": "W0VVR7E60LY028471",
+    "color": "Arktis-Weiß",
+    "engine": "2.0 L Diesel (90 kW / 122 PS)",
+    "carId": "5"
+  },
+  {
+    "vinCode": "VSSZZZKMZNR049182",
+    "color": "Graphene Grey",
+    "engine": "1.4 L Plug-in Hybrid Petrol (180 kW / 245 PS)",
+    "carId": "6"
+  },
+  {
+    "vinCode": "WF0FXXWPMFLH58391",
+    "color": "Magnetic-Grau Metallic",
+    "engine": "1.5 L EcoBoost Petrol (110 kW / 150 PS)",
+    "carId": "7"
+  },
+  {
+    "vinCode": "TMAH381CVNJ104829",
+    "color": "Phantom Black Metallic",
+    "engine": "1.6 L T-GDI Smartstream Petrol (110 kW / 150 PS)",
+    "carId": "8"
+  },
+  {
+    "vinCode": "VF3URHNSMKY194820",
+    "color": "Elixir Rot Metallic",
+    "engine": "1.2 L PureTech Petrol (96 kW / 130 PS)",
+    "carId": "9"
+  },
+  {
+    "vinCode": "LSG34A1B5PA048291",
+    "color": "Como Blue Metallic",
+    "engine": "1.5 L Hybrid Petrol (75 kW / 102 PS)",
+    "carId": "10"
+  },
+  {
+    "vinCode": "WVWZZZCDZPW048291",
+    "color": "Delfingrau Metallic",
+    "engine": "2.0 L TDI Diesel (110 kW / 150 PS)",
+    "carId": "11"
+  },
+  {
+    "vinCode": "WVGZZZA1ZNY184920",
+    "color": "Lapiz Blue Metallic",
+    "engine": "1.5 L TSI Petrol (110 kW / 150 PS)",
+    "carId": "12"
+  },
+  {
+    "vinCode": "WVGZZZ5NZNW029481",
+    "color": "Deep Black Perleffekt",
+    "engine": "2.0 L TSI 4MOTION Petrol (140 kW / 190 PS)",
+    "carId": "13"
+  },
+  {
+    "vinCode": "WVGZZZE1ZNP038491",
+    "color": "Gletscherweiß Metallic",
+    "engine": "Electric Motor (150 kW / 204 PS)",
+    "carId": "14"
+  },
+  {
+    "vinCode": "WV2ZZZ70ZNH028491",
+    "color": "Ascotgrau",
+    "engine": "2.0 L TDI Diesel (110 kW / 150 PS)",
+    "carId": "15"
+  }
+]

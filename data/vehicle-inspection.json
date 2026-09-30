@@ -1,0 +1,92 @@
+[
+  {
+    "mileage": 3250,
+    "isRegistration": true,
+    "body": 85,
+    "salon": 98,
+    "wheels": 80,
+    "engine": 30,
+    "electronics": 76
+  },
+  {
+    "mileage": 0,
+    "isRegistration": false,
+    "body": 100,
+    "salon": 100,
+    "wheels": 100,
+    "engine": 100,
+    "electronics": 100
+  },
+  {
+    "mileage": 2840,
+    "isRegistration": true,
+    "body": 88,
+    "salon": 92,
+    "wheels": 85,
+    "engine": 95,
+    "electronics": 91
+  },
+  {
+    "mileage": 450,
+    "isRegistration": true,
+    "body": 99,
+    "salon": 99,
+    "wheels": 95,
+    "engine": 100,
+    "electronics": 100
+  },
+  {
+    "mileage": 1950,
+    "isRegistration": true,
+    "body": 92,
+    "salon": 95,
+    "wheels": 88,
+    "engine": 97,
+    "electronics": 94
+  },
+  {
+    "mileage": 150,
+    "isRegistration": false,
+    "body": 100,
+    "salon": 100,
+    "wheels": 98,
+    "engine": 100,
+    "electronics": 99
+  },
+  {
+    "mileage": 2100,
+    "isRegistration": true,
+    "body": 90,
+    "salon": 91,
+    "wheels": 82,
+    "engine": 94,
+    "electronics": 89
+  },
+  {
+    "mileage": 55,
+    "isRegistration": false,
+    "body": 100,
+    "salon": 100,
+    "wheels": 100,
+    "engine": 100,
+    "electronics": 100
+  },
+  {
+    "mileage": 1350,
+    "isRegistration": true,
+    "body": 94,
+    "salon": 96,
+    "wheels": 91,
+    "engine": 98,
+    "electronics": 96
+  },
+  {
+    "mileage": 2990,
+    "isRegistration": true,
+    "body": 85,
+    "salon": 89,
+    "wheels": 80,
+    "engine": 92,
+    "electronics": 88
+  }
+]

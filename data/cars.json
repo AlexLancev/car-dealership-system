@@ -1,0 +1,122 @@
+[
+  {
+    "brand": "Audi",
+    "model": "Q5 Sportback 40 TDI MHEV quattro",
+    "isAvailable": true,
+    "price": 38780,
+    "showroomId": 1,
+    "featureIds": [1]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Klasse C 220 d T-Modell",
+    "isAvailable": true,
+    "price": 29900,
+    "showroomId": 1,
+    "featureIds": [2]
+  },
+  {
+    "brand": "BMW",
+    "model": "530d xDrive Touring",
+    "isAvailable": true,
+    "price": 34500,
+    "showroomId": 1,
+    "featureIds": [3]
+  },
+  {
+    "brand": "Porsche",
+    "model": "Macan GTS",
+    "isAvailable": true,
+    "price": 59.800,
+    "showroomId": 1,
+    "featureIds": [4]
+  },
+  {
+    "brand": "Opel",
+    "model": "Vivaro Combi L",
+    "isAvailable": true,
+    "price": 22.400,
+    "showroomId": 1,
+    "featureIds": [5]
+  },
+  {
+    "brand": "Cupra",
+    "model": "Formentor 1.4 e-Hybrid",
+    "isAvailable": true,
+    "price": 29.990,
+    "showroomId": 2,
+    "featureIds": [6]
+  },
+  {
+    "brand": "Ford",
+    "model": "Kuga 1.5 EcoBoost ST-Line Aut.",
+    "isAvailable": true,
+    "price": 30.890,
+    "showroomId": 2,
+    "featureIds": [7]
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson 1.6 T-GDI Aut.",
+    "isAvailable": true,
+    "price": 29.890,
+    "showroomId": 2,
+    "featureIds": [8]
+  },
+  {
+    "brand": "Peugeot",
+    "model": "2008 PureTech 145 Aut.",
+    "isAvailable": true,
+    "price": 25.490,
+    "showroomId": 2,
+    "featureIds": [9]
+  },
+  {
+    "brand": "MG",
+    "model": "MG3 1.5 LED Navi",
+    "isAvailable": true,
+    "price": 15.890,
+    "showroomId": 2,
+    "featureIds": [10]
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Golf Variant 2.0 TDI Style",
+    "isAvailable": true,
+    "price": 28.900,
+    "showroomId": 3,
+    "featureIds": [11]
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "T-Roc 1.5 TSI R-Line Aut.",
+    "isAvailable": true,
+    "price": 31.450,
+    "showroomId": 3,
+    "featureIds": [12]
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Tiguan 2.0 TSI DSG 4MOTION",
+    "isAvailable": true,
+    "price": 39.900,
+    "showroomId": 3,
+    "featureIds": [13]
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "ID.4 Pro",
+    "isAvailable": true,
+    "price": 42.200,
+    "showroomId": 3,
+    "featureIds": [14]
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "California 6.1 Beach Camper",
+    "isAvailable": true,
+    "price": 64.950,
+    "showroomId": 3,
+    "featureIds": [15]
+  }
+]
