@@ -19,6 +19,7 @@ enum RoleSalesman {
 }
 
 enum DealershipRole {
+  GENERAL_OWNER
   OWNER
   CHIEF_ADMIN
   ADMIN
@@ -44,6 +45,7 @@ model Showroom {
   quantityCar Int    @default(0)
   salesVolume Int    @default(0)
   revenue     Int    @default(0)
+  retention   Float  @default(0)
 
   salesmen Salesman[]
   staff    Staff[]
@@ -117,7 +119,7 @@ model Buyer {
   phoneNumber String?
   email       String?
 
-  passport Passport?
+  bayerPassport BayerPassport?
 
   salesmen  Salesman[]
   showrooms Showroom[]
@@ -125,7 +127,7 @@ model Buyer {
   ownedCars Car[]
 }
 
-model Passport {
+model BayerPassport {
   id             Int      @id @default(autoincrement())
   documentNumber String
   givenNames     String
