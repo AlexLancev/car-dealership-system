@@ -39,13 +39,13 @@ model Staff {
 }
 
 model Showroom {
-  id          Int    @id @default(autoincrement())
+  id          Int     @id @default(autoincrement())
   name        String
   address     String
-  quantityCar Int    @default(0)
-  salesVolume Int    @default(0)
-  revenue     Int    @default(0)
-  retention   Float  @default(0)
+  quantityCar Int     @default(0)
+  salesVolume Int     @default(0)
+  revenue     Decimal @default(0) @db.Decimal(12, 2)
+  retention   Decimal @default(0) @db.Decimal(12, 2)
 
   salesmen Salesman[]
   staff    Staff[]
@@ -57,8 +57,9 @@ model Car {
   id          Int     @id @default(autoincrement())
   brand       String
   model       String
-  price       Int
+  price       Decimal @db.Decimal(12, 2)
   isAvailable Boolean @default(true)
+  discount    Boolean @default(false)
 
   mileage        Int     @default(0)
   isRegistration Boolean @default(false)
@@ -100,9 +101,9 @@ model Salesman {
   id               Int          @id @default(autoincrement())
   roleSalesman     RoleSalesman @default(JUNIOR)
   name             String
-  salary           Int          @default(400)
+  salary           Decimal      @default(400) @db.Decimal(12, 2)
   transactionCount Int          @default(0)
-  bonus            Int?         @default(0)
+  bonus            Decimal?     @default(0) @db.Decimal(12, 2)
 
   showroom   Showroom @relation(fields: [showroomId], references: [id], onDelete: Cascade)
   showroomId Int
@@ -114,7 +115,7 @@ model Salesman {
 model Buyer {
   id          Int     @id @default(autoincrement())
   name        String
-  amountMoney Int
+  amountMoney Decimal @default(0) @db.Decimal(12, 2)
   quantityCar Int     @default(0)
   phoneNumber String?
   email       String?
@@ -143,7 +144,7 @@ model BayerPassport {
 model VehicleInspection {
   id               Int      @id @default(autoincrement())
   createdAt        DateTime @default(now())
-  accruedAmount    Float
+  accruedAmount    Decimal  @default(0) @db.Decimal(12, 2)
   isReturnPossible Boolean
 
   mileage        Int
