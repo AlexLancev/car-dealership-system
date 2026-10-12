@@ -36,6 +36,8 @@ model Staff {
 
   showroom   Showroom? @relation(fields: [showroomId], references: [id], onDelete: Cascade)
   showroomId Int?
+
+  @@index([showroomId])
 }
 
 model Showroom {
@@ -76,6 +78,10 @@ model Car {
 
   salesman   Salesman? @relation(fields: [salesmanId], references: [id], onDelete: SetNull)
   salesmanId Int?
+
+  @@index([showroomId])
+  @@index([buyerId])
+  @@index([salesmanId])
 }
 
 model CarDetails {
@@ -87,6 +93,7 @@ model CarDetails {
   car   Car @relation(fields: [carId], references: [id], onDelete: Cascade)
   carId Int @unique
 
+  @@index([carId])
   @@map("car_details")
 }
 
@@ -110,6 +117,8 @@ model Salesman {
 
   buyers Buyer[]
   car    Car[]
+
+  @@index([showroomId])
 }
 
 model Buyer {
@@ -119,8 +128,9 @@ model Buyer {
   quantityCar Int     @default(0)
   phoneNumber String?
   email       String?
+  showroomId  Int?
 
-  bayerPassport BayerPassport?
+  buyerPassport BuyerPassport?
 
   salesmen  Salesman[]
   showrooms Showroom[]
@@ -128,7 +138,7 @@ model Buyer {
   ownedCars Car[]
 }
 
-model BayerPassport {
+model BuyerPassport {
   id             Int      @id @default(autoincrement())
   documentNumber String
   givenNames     String
@@ -139,6 +149,8 @@ model BayerPassport {
 
   buyer   Buyer @relation(fields: [buyerId], references: [id], onDelete: Cascade)
   buyerId Int   @unique
+
+  @@index([buyerId])
 }
 
 model VehicleInspection {
@@ -156,6 +168,8 @@ model VehicleInspection {
   technicalScore TechnicalScore @relation(fields: [techId], references: [id], onDelete: Cascade)
   techId         Int            @unique
 
+  @@index([carId])
+  @@index([techId])
   @@map("vehicle_inspections")
 }
 
